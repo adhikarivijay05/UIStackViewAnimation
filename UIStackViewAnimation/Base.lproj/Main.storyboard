@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStackViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,207 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eT-Nv-42I">
+                                <rect key="frame" x="62" y="208.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0tF-gv-PbQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="m4n-lY-qYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-Ym-8Gf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-JA-Snt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPV-LK-S49">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐪 camel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="camelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJf-Xs-AUA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.51042312379999999" blue="0.9507012963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="GqE-6k-udl"/>
+                                            <constraint firstItem="LPV-LK-S49" firstAttribute="centerY" secondItem="3dO-JA-Snt" secondAttribute="centerY" id="R7O-ef-q4L"/>
+                                            <constraint firstItem="LPV-LK-S49" firstAttribute="centerX" secondItem="3dO-JA-Snt" secondAttribute="centerX" id="yvi-86-Ggh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-Wd-9dn">
+                                        <rect key="frame" x="0.0" y="81" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naq-e2-GlZ">
+                                                <rect key="frame" x="135" y="12" width="105" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐑 Goat">
+                                                    <color key="titleColor" red="0.44559300870000002" green="0.322591075" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goatClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jG-x0-eOA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92831577919999997" green="1" blue="0.041084686539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="naq-e2-GlZ" firstAttribute="centerY" secondItem="hr4-Wd-9dn" secondAttribute="centerY" id="L7q-6U-ApW"/>
+                                            <constraint firstItem="naq-e2-GlZ" firstAttribute="centerX" secondItem="hr4-Wd-9dn" secondAttribute="centerX" id="eQN-dH-spj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slB-yF-ziZ">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnH-T6-mHd">
+                                                <rect key="frame" x="103.5" y="12" width="168" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🦋 Butterfly">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="butterflyClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WHi-ri-fUx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90290743110000005" green="0.3677842617" blue="0.39396142960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hnH-T6-mHd" firstAttribute="centerX" secondItem="slB-yF-ziZ" secondAttribute="centerX" id="38r-ba-KTj"/>
+                                            <constraint firstItem="hnH-T6-mHd" firstAttribute="centerY" secondItem="slB-yF-ziZ" secondAttribute="centerY" id="WOM-ax-Vj4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEP-HF-im1">
+                                        <rect key="frame" x="0.0" y="243" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP0-9n-ARj">
+                                                <rect key="frame" x="124" y="12" width="127" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐍 Snake">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sankeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MWI-ln-8eR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.44559300870000002" green="0.322591075" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="vP0-9n-ARj" firstAttribute="centerX" secondItem="LEP-HF-im1" secondAttribute="centerX" id="Hil-o9-wRq"/>
+                                            <constraint firstItem="vP0-9n-ARj" firstAttribute="centerY" secondItem="LEP-HF-im1" secondAttribute="centerY" id="nwV-QB-35U"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVP-hU-aQ7">
+                                        <rect key="frame" x="0.0" y="324" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-xI-uL3">
+                                                <rect key="frame" x="131" y="12" width="113" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐅 Tiger">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tigerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIf-o9-ygH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.22717136139999999" green="0.82506412269999996" blue="0.81922936440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5Sn-xI-uL3" firstAttribute="centerY" secondItem="VVP-hU-aQ7" secondAttribute="centerY" id="Xqc-1z-Drh"/>
+                                            <constraint firstItem="5Sn-xI-uL3" firstAttribute="centerX" secondItem="VVP-hU-aQ7" secondAttribute="centerX" id="YiF-Jc-3Zh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-sG-2i5">
+                                        <rect key="frame" x="0.0" y="405" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cj-g0-fJB">
+                                                <rect key="frame" x="126" y="12" width="123" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐎 Horse">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="horseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ud-P2-qv1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.21802469120000001" blue="0.84246614890000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9Cj-g0-fJB" firstAttribute="centerY" secondItem="cW2-sG-2i5" secondAttribute="centerY" id="ghf-j3-c94"/>
+                                            <constraint firstItem="9Cj-g0-fJB" firstAttribute="centerX" secondItem="cW2-sG-2i5" secondAttribute="centerX" id="kKc-oC-qUy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhw-rU-1Va">
+                                        <rect key="frame" x="0.0" y="486" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMm-p0-S1K">
+                                                <rect key="frame" x="146" y="12" width="83" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐖 Pig">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pigClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ou7-3b-uh1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18658308579999999" green="0.34586477589999998" blue="0.90290743110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZMm-p0-S1K" firstAttribute="centerX" secondItem="xhw-rU-1Va" secondAttribute="centerX" id="Gek-6A-Iac"/>
+                                            <constraint firstItem="ZMm-p0-S1K" firstAttribute="centerY" secondItem="xhw-rU-1Va" secondAttribute="centerY" id="J6T-ry-OgW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm3-l7-bHk">
+                                        <rect key="frame" x="0.0" y="567" width="375" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-Rn-CBL">
+                                                <rect key="frame" x="121.5" y="12" width="132" height="47"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                                <state key="normal" title="🐁 Mouse">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mouseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ai9-ky-4jR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.22717136139999999" green="0.82506412269999996" blue="0.81922936440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Kbh-Rn-CBL" firstAttribute="centerX" secondItem="Dm3-l7-bHk" secondAttribute="centerX" id="Q0E-fz-Qfj"/>
+                                            <constraint firstItem="Kbh-Rn-CBL" firstAttribute="centerY" secondItem="Dm3-l7-bHk" secondAttribute="centerY" id="byb-gq-Bwu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55945146558429337" green="0.72336632013320923" blue="0.53771665293951187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2eT-Nv-42I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Wz-Y6-cJK"/>
+                            <constraint firstAttribute="trailing" secondItem="tBd-Ym-8Gf" secondAttribute="trailing" id="Ahr-UI-Fbh"/>
+                            <constraint firstItem="tBd-Ym-8Gf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G0U-oA-Uyh"/>
+                            <constraint firstItem="tBd-Ym-8Gf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ic0-iE-deh"/>
+                            <constraint firstItem="2eT-Nv-42I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sgt-dM-dK3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectedView" destination="2eT-Nv-42I" id="z3x-lY-kdd"/>
+                        <outletCollection property="colorView" destination="VVP-hU-aQ7" collectionClass="NSMutableArray" id="Mzy-8f-tcA"/>
+                        <outletCollection property="colorView" destination="hr4-Wd-9dn" collectionClass="NSMutableArray" id="PUx-SC-Ig2"/>
+                        <outletCollection property="colorView" destination="slB-yF-ziZ" collectionClass="NSMutableArray" id="BbZ-sX-yiu"/>
+                        <outletCollection property="colorView" destination="LEP-HF-im1" collectionClass="NSMutableArray" id="JwA-jC-wou"/>
+                        <outletCollection property="colorView" destination="cW2-sG-2i5" collectionClass="NSMutableArray" id="2Se-ZC-ugr"/>
+                        <outletCollection property="colorView" destination="xhw-rU-1Va" collectionClass="NSMutableArray" id="4OV-Fm-eMw"/>
+                        <outletCollection property="colorView" destination="Dm3-l7-bHk" collectionClass="NSMutableArray" id="fhD-XO-hjr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="81" y="-174"/>
         </scene>
     </scenes>
 </document>

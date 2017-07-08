@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIStackViewAnimation/ViewController.swift"
+            timestampString = "521225981.662061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "colorView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIStackViewAnimation.ViewController.colorView.didset : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;__ObjC.UIView&gt;&gt;"
+                  moduleName = "UIStackViewAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijayadhikari/Desktop/UIStackViewAnimation/UIStackViewAnimation/ViewController.swift"
+                  timestampString = "521225989.35871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIStackViewAnimation.ViewController.(colorView.didset : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;__ObjC.UIView&gt;&gt;).(closure #1)"
+                  moduleName = "UIStackViewAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijayadhikari/Desktop/UIStackViewAnimation/UIStackViewAnimation/ViewController.swift"
+                  timestampString = "521225989.361439"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
